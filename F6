@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>Cake's</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .image-container {
+      position:relative;
+      display: inline-block;
+    }
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  p.c {
+  font-style: oblique;
+}
+  </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center">
+  <div class="container-fluid p-5 bg-info text-white text-center">
+      <img src="data:image/jpeg;base64,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" alt="" width="6%" height="6%" >
+    <div style="align-self: auto;">
+  <h1><i>Cakes Recipes</i></h1>
+  <h3>Make A Try!</h3> 
+</div>
+    <a class="navbar-brand" href="#">
+     
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h3><i><b>All Recipes</b></i></h3></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h3><i><b>Chef Special</b></i></h3></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h3><i><b>Blogs</b></i></h3></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><h3><i><b>About Us</b></i></h3></a>
+    </li>
+  </ul>
+</nav> 
+    </a>
+  
+</nav>
+</div>
+
+
+
+<div class="container my-5">
+  <div class="image-container">
+    <img src="https://www.milkmaid.in/sites/default/files/2024-09/Chocolate-cake_11zon%20%281%29.webp" class="img-fluid" alt="Sample Image" >
+    <div class="overlay-text"><h2><b><i>CAKE this world a better place with these super easy recipes!</i></b></h2>
+  </div>
+</div>
+<br><br>
+<h1>
+
+  <style>
+  .btn-cake {
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+  }
+
+  .btn-cake:hover {
+    background-color: #ff1493;
+  }
+</style>
+  <div class="container my-5">
+  <h2 align="center"><i>All Cakes Recipes</i></h2>
+
+  <p id="cakeIntro" class="fs-6">
+    Imagine the smell of freshly baked cakes wafting through the corridors of your home, spellbinding everyone. The decadent frosting and the soft, moist layers of the sponge cake can easily transport your family to their very own happy place.
+    <span id="dots">...</span>
+    <span id="moreText" style="display: none;">
+      <br><br>
+      Feeling intimidated? There’s no need to because now you’ll be able to create mouth-watering cakes for every occasion, big or small, in a jiffy. Baking a cake from scratch might seem like a risky endeavour at first. But our quick recipes show you how to make cakes by following some simple steps and tips.
+      <br><br>
+      For all those who’ve been wanting to bake best flavour cakes right at home, we’re here to tell you that the wait is finally over. With our quick cake recipes, you can create a whole range of cakes from simple cakes to eggless cakes and exquisite gourmet cakes in the comfort of your own kitchen!
+    </span>
+  </p>
+
+  
+  <div class="d-flex justify-content-center">
+    <button class="btn btn-cake" id="toggleButton" onclick="toggleText()">Show More ></button>
+  </div>
+</div>
+
+<script>
+  function toggleText() {
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("moreText");
+    const btnText = document.getElementById("toggleButton");
+
+    const isHidden = moreText.style.display === "none";
+
+    moreText.style.display = isHidden ? "inline" : "none";
+    dots.style.display = isHidden ? "none" : "inline";
+    btnText.textContent = isHidden ? "Show Less" : "Show More >";
+    btnText.setAttribute("aria-expanded", isHidden.toString());
+  }
+</script>
+
+<div class="container text-center my-4">
+  <a href="#allCakes" class="btn custom-btn mx-2">
+    <img src="https://www.milkmaid.in/themes/custom/milkmaid/common/svg/cake.svg" alt="Cake" style="width: 50px; height: 50px; margin-right: 5px; vertical-align: middle;">
+   All Cakes</a>
+  <a href="#egglessCakes" class="btn custom-btn mx-2">
+    <img src="https://uxwing.com/wp-content/themes/uxwing/download/food-and-drinks/egg-free-icon.svg" alt="Cake" style="width: 50px; height: 50px; margin-right: 5px; vertical-align: middle;"> Eggless Cakes</a>
+  <a href="#allRecipes" class="btn custom-btn mx-2">
+    <img src="https://www.milkmaid.in/themes/custom/milkmaid/common/svg/all-recipes.svg" alt="Cake" style="width: 50px; height: 50px; margin-right: 5px; vertical-align: middle;">  All Recipes</a>
+</div>
+
+
+<style>
+  .custom-btn {
+    background-color: white;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .custom-btn:hover {
+    background-color: #f8f9fa;
+    border-color: #999;
+    color: #000;
+  }
+</style>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www.milkmaid.in/sites/default/files/2024-04/BlackForest-Cake-385x619_21_11zon%20%281%29.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Black forest</h5>
+    <a href="https://www.milkmaid.in/recipes/black-forest-cake" class="btn btn-primary">Try it</a>
+    <hr>
+    
+     </div>
+</div>
+
+
+<div class="container mt-3">
+ <div class="card" style="width:18rem">
+    <img class="card-img-top" src="https://www.milkmaid.in/sites/default/files/2023-07/Chocolate-Cake-385x619-Revised_6_11zon.webp" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Moist Chocolate cake recipe</h4>
+      <a href="https://www.milkmaid.in/recipes/chocolate-cake" class="btn btn-primary">Try it</a>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+<div class="container mt-3">
+ <div class="card" style="width:18rem">
+    <img class="card-img-top" src="https://www.milkmaid.in/sites/default/files/2023-07/Banana-Cake-385x619_1_11zon.webp" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Best Banana Cake recipe</h4>
+      <a href="https://www.milkmaid.in/recipes/banana-cake" class="btn btn-primary">Try it</a>
+      <hr>
+    </div>
+  </div>
+  <br>
+
+
+</body>
+</html>
